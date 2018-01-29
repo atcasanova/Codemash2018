@@ -24,8 +24,7 @@ binary2qrcode(){
 		(( char == 0 )) \
 			&& {
 				comando+=" -fill white -draw \"rectangle $col,$linha $(($col+2)),$(($linha+2))\"" \
-				qrcode+="$white"
-		
+				qrcode+="$white"		
 			} || {
 				comando+=" -fill black -draw \"rectangle $col,$linha $(($col+2)),$(($linha+2))\""
 				qrcode+="$black"
